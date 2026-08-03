@@ -1,0 +1,28 @@
+[
+  {
+    "ContainingType": "MicroservicioProductosCorresponsal.API.Controllers.ProductosCorresponsalController",
+    "Method": "ObtenerdatosDestino",
+    "RelativePath": "api/ProductosCorresponsal/v1/BancoPopular/obtener-datos-cuenta-destino",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "MicroservicioProductosCorresponsal.DTO.Cuentas.RequestInfoCuentaDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "MicroservicioProductosCorresponsal.DTO.Cuentas.ResponseInfoCuentaDTO",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  }
+]

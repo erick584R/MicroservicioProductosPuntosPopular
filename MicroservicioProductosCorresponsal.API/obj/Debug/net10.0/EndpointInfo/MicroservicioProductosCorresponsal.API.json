@@ -1,0 +1,442 @@
+{
+  "openapi": "3.0.4",
+  "info": {
+    "title": "MicroservicioProductosCorresponsal.API",
+    "version": "1.0"
+  },
+  "paths": {
+    "/api/ProductosCorresponsal/v1/BancoPopular/obtener-datos-cuenta-destino": {
+      "post": {
+        "tags": [
+          "ProductosCorresponsal"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/RequestInfoCuentaDTO"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/RequestInfoCuentaDTO"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/RequestInfoCuentaDTO"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/ResponseInfoCuentaDTO"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ResponseInfoCuentaDTO"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ResponseInfoCuentaDTO"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "BPOutReqDTO": {
+        "type": "object",
+        "properties": {
+          "codigoError": {
+            "type": "string",
+            "nullable": true
+          },
+          "mensajeError": {
+            "type": "string",
+            "nullable": true
+          },
+          "fechaHora": {
+            "type": "string",
+            "format": "date-time"
+          }
+        },
+        "additionalProperties": false
+      },
+      "BpInReqDTO": {
+        "type": "object",
+        "properties": {
+          "canal": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "dispositivoFisico": {
+            "type": "string",
+            "nullable": true
+          },
+          "ipDispositivo": {
+            "type": "string",
+            "nullable": true
+          },
+          "ctnro": {
+            "type": "string",
+            "nullable": true
+          },
+          "usuario": {
+            "type": "string",
+            "nullable": true
+          },
+          "token": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "Producto": {
+        "type": "object",
+        "properties": {
+          "moneda": {
+            "type": "string",
+            "nullable": true
+          },
+          "papel": {
+            "type": "string",
+            "nullable": true
+          },
+          "productoUId": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "nombre": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "ProductoPasivo": {
+        "type": "object",
+        "properties": {
+          "productoFormatoBP": {
+            "type": "string",
+            "nullable": true
+          },
+          "tipoProducto": {
+            "type": "string",
+            "nullable": true
+          },
+          "estado": {
+            "type": "string",
+            "nullable": true
+          },
+          "subCuenta": {
+            "type": "string",
+            "nullable": true
+          },
+          "operacionUId": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "saldo": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "idOperacionFmt": {
+            "type": "string",
+            "nullable": true
+          },
+          "idOperacionBT": {
+            "type": "string",
+            "nullable": true
+          },
+          "producto": {
+            "$ref": "#/components/schemas/Producto"
+          },
+          "sucursal": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "ProductosPasivos": {
+        "type": "object",
+        "properties": {
+          "productoPasivo": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/ProductoPasivo"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "RequestInfoCuentaDTO": {
+        "type": "object",
+        "properties": {
+          "bpInReq": {
+            "$ref": "#/components/schemas/BpInReqDTO"
+          },
+          "cuenta": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "ResponseInfoCuentaDTO": {
+        "type": "object",
+        "properties": {
+          "bpOutReq": {
+            "$ref": "#/components/schemas/BPOutReqDTO"
+          },
+          "productosPasivos": {
+            "$ref": "#/components/schemas/ResponseProductosDTO"
+          },
+          "sdtPersona": {
+            "$ref": "#/components/schemas/SdtPersona"
+          }
+        },
+        "additionalProperties": false
+      },
+      "ResponseProductosDTO": {
+        "type": "object",
+        "properties": {
+          "productosPasivos": {
+            "$ref": "#/components/schemas/ProductosPasivos"
+          }
+        },
+        "additionalProperties": false
+      },
+      "SdtPersona": {
+        "type": "object",
+        "properties": {
+          "ctnro": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "clienteUid": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "personaUid": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "paisDocumentoId": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "apartamento": {
+            "type": "string",
+            "nullable": true
+          },
+          "sectorId": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "tipoDocumentoId": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "ingresos": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "nacionalidad": {
+            "type": "string",
+            "nullable": true
+          },
+          "ocupacionId": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "sexo": {
+            "type": "string",
+            "nullable": true
+          },
+          "barrio": {
+            "type": "string",
+            "nullable": true
+          },
+          "estadoCivil": {
+            "type": "string",
+            "nullable": true
+          },
+          "direccion": {
+            "type": "string",
+            "nullable": true
+          },
+          "nroDocumento": {
+            "type": "string",
+            "nullable": true
+          },
+          "localidad": {
+            "type": "string",
+            "nullable": true
+          },
+          "segundoNombre": {
+            "type": "string",
+            "nullable": true
+          },
+          "clasificacionInternaId": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "telefonoCelular": {
+            "type": "string",
+            "nullable": true
+          },
+          "departamentoId": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "actividadLaboral": {
+            "type": "string",
+            "nullable": true
+          },
+          "nacionalidadId": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "localidadId": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "clasificacionInterna": {
+            "type": "string",
+            "nullable": true
+          },
+          "paisDomicilioId": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "sector": {
+            "type": "string",
+            "nullable": true
+          },
+          "telefonoFijo": {
+            "type": "string",
+            "nullable": true
+          },
+          "referencia": {
+            "type": "string",
+            "nullable": true
+          },
+          "codigoPostal": {
+            "type": "string",
+            "nullable": true
+          },
+          "primerNombre": {
+            "type": "string",
+            "nullable": true
+          },
+          "fechaNacimiento": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "actividadLaboralId": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "primerApellido": {
+            "type": "string",
+            "nullable": true
+          },
+          "estadoCivilId": {
+            "type": "string",
+            "nullable": true
+          },
+          "segundoApellido": {
+            "type": "string",
+            "nullable": true
+          },
+          "paisDocumento": {
+            "type": "string",
+            "nullable": true
+          },
+          "fechaInicioActividad": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "ocupacion": {
+            "type": "string",
+            "nullable": true
+          },
+          "paisDomicilio": {
+            "type": "string",
+            "nullable": true
+          },
+          "departamento": {
+            "type": "string",
+            "nullable": true
+          },
+          "fechaVencimiento": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "correoElectronico": {
+            "type": "string",
+            "nullable": true
+          },
+          "numeroPuerta": {
+            "type": "string",
+            "nullable": true
+          },
+          "calle": {
+            "type": "string",
+            "nullable": true
+          },
+          "barrioId": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "tipoDocumento": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      }
+    }
+  },
+  "tags": [
+    {
+      "name": "ProductosCorresponsal"
+    }
+  ]
+}

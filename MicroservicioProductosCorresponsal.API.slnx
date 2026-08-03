@@ -1,0 +1,6 @@
+<Solution>
+  <Project Path="MicroservicioProductosCorresponsal.API/MicroservicioProductosCorresponsal.API.csproj" />
+  <Project Path="MicroservicioProductosCorresponsal.APP/MicroservicioProductosCorresponsal.APP.csproj" />
+  <Project Path="MicroservicioProductosCorresponsal.DAA/MicroservicioProductosCorresponsal.DAA.csproj" />
+  <Project Path="MicroservicioProductosCorresponsal.Trn/MicroservicioProductosCorresponsal.DTO.csproj" />
+</Solution>
