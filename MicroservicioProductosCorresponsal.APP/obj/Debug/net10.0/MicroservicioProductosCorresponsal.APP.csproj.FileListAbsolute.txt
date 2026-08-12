@@ -15,3 +15,4 @@ C:\Users\erick.ramirez\Desktop\AgentesCorresponsal_V2.00\BackEnd\MicroservicioPr
 C:\Users\erick.ramirez\Desktop\AgentesCorresponsal_V2.00\BackEnd\MicroservicioProductosCorresponsal.API\MicroservicioProductosCorresponsal.APP\obj\Debug\net10.0\refint\MicroservicioProductosCorresponsal.APP.dll
 C:\Users\erick.ramirez\Desktop\AgentesCorresponsal_V2.00\BackEnd\MicroservicioProductosCorresponsal.API\MicroservicioProductosCorresponsal.APP\obj\Debug\net10.0\MicroservicioProductosCorresponsal.APP.pdb
 C:\Users\erick.ramirez\Desktop\AgentesCorresponsal_V2.00\BackEnd\MicroservicioProductosCorresponsal.API\MicroservicioProductosCorresponsal.APP\obj\Debug\net10.0\ref\MicroservicioProductosCorresponsal.APP.dll
+C:\Users\erick.ramirez\Desktop\AgentesCorresponsal_V2.00\BackEnd\MicroservicioProductosCorresponsal.API\MicroservicioProductosCorresponsal.APP\obj\Debug\net10.0\MicroservicioProductosCorresponsal.APP.sourcelink.json

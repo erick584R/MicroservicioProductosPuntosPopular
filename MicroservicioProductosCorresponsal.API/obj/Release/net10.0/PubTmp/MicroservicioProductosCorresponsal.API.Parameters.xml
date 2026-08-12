@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="IIS Web Application Name" description="" value="MicroservicioProductosPuntosPopular" tags="IisApp">
+    <parameterEntry kind="ProviderPath" scope="IisApp" match="^C:\\Users\\erick\.ramirez\\Desktop\\AgentesCorresponsal_V2\.00\\BackEnd\\MicroservicioProductosCorresponsal\.API\\MicroservicioProductosCorresponsal\.API\\obj\\Release\\net10\.0\\PubTmp\\Out\\$" />
+  </parameter>
+</parameters>

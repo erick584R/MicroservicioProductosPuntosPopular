@@ -66,3 +66,4 @@ C:\Users\erick.ramirez\Desktop\AgentesCorresponsal_V2.00\BackEnd\MicroservicioPr
 C:\Users\erick.ramirez\Desktop\AgentesCorresponsal_V2.00\BackEnd\MicroservicioProductosCorresponsal.API\MicroservicioProductosCorresponsal.API\bin\Debug\net10.0\Swashbuckle.AspNetCore.Swagger.dll
 C:\Users\erick.ramirez\Desktop\AgentesCorresponsal_V2.00\BackEnd\MicroservicioProductosCorresponsal.API\MicroservicioProductosCorresponsal.API\bin\Debug\net10.0\Swashbuckle.AspNetCore.SwaggerGen.dll
 C:\Users\erick.ramirez\Desktop\AgentesCorresponsal_V2.00\BackEnd\MicroservicioProductosCorresponsal.API\MicroservicioProductosCorresponsal.API\bin\Debug\net10.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\erick.ramirez\Desktop\AgentesCorresponsal_V2.00\BackEnd\MicroservicioProductosCorresponsal.API\MicroservicioProductosCorresponsal.API\obj\Debug\net10.0\MicroservicioProductosCorresponsal.API.sourcelink.json
