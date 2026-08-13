@@ -9,5 +9,6 @@ namespace MicroservicioProductosCorresponsal.DAA.CuentasDA
     {
 
         Task<ResponseInfoCuentaDTO> ObtenerDatosCuentaDestino(RequestInfoCuentaDTO cuenta);
+        Task<string> ObtenerCuentaEquivalenteAsync(int canalBP, string cuentaNormal);
     }
 }

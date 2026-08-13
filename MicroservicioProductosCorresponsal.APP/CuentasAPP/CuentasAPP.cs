@@ -40,6 +40,28 @@ namespace MicroservicioProductosCorresponsal.APP.CuentasAPP
             ResponseInfoCuentaDTO? obtenerDatos = null;
             try
             {
+                //Buscamos la equivalencia de la cuenta en la tabla de cuentas equivalentes, si no se encuentra, se retorna el error 1013
+                string EncontrarEquivalencia = await _cuentasDA.ObtenerCuentaEquivalenteAsync(Convert.ToInt32(request.BPInReq.Canal), request.Cuenta);
+
+                //Si no se encontro la cuenta equivalente, se retorna el error 1013
+                if (EncontrarEquivalencia == null)
+                {
+                    _bpoutReqDTO.CodigoError = "1013";
+                    _bpoutReqDTO.MensajeError = _configuration
+                        .GetSection("MensajesError")[_bpoutReqDTO.CodigoError];
+                    _bpoutReqDTO.FechaHora = DateTime.Now;
+
+                    response.BpOutReq = _bpoutReqDTO;
+
+
+                    return response;
+
+                }
+
+                // Si se encontro la cuenta equivalente, se asigna a la propiedad Cuenta del request
+                request.Cuenta = EncontrarEquivalencia;
+
+
                 obtenerDatos = await _cuentasDA.ObtenerDatosCuentaDestino(request);
                 if (obtenerDatos?.productosPasivos?.ProductosPasivos?.ProductoPasivo == null)
                 {
@@ -54,15 +76,7 @@ namespace MicroservicioProductosCorresponsal.APP.CuentasAPP
                     return response;
 
                 }
-                if (obtenerDatos.sdtPersona.Ctnro.ToString() == request.BPInReq.Ctnro)
-                {
-                    _bpoutReqDTO.CodigoError = "1013";
-                    _bpoutReqDTO.MensajeError = _configuration
-                        .GetSection("MensajesError")[_bpoutReqDTO.CodigoError];
-                    _bpoutReqDTO.FechaHora = DateTime.Now;
-                    response.BpOutReq = _bpoutReqDTO;
-                    return response;
-                }
+                
                 _bpoutReqDTO.CodigoError = "0";
                 _bpoutReqDTO.MensajeError = _configuration
                     .GetSection("MensajesError")[_bpoutReqDTO.CodigoError];

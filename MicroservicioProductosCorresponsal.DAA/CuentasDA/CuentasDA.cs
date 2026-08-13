@@ -62,5 +62,22 @@ namespace MicroservicioProductosCorresponsal.DAA.CuentasDA
             }
         }
 
+
+
+        public async Task<string> ObtenerCuentaEquivalenteAsync(int canalBP, string cuentaNormal)
+        {
+            
+            var equivalencia = await _bts.BuscarEquivalencia(canalBP, cuentaNormal);
+
+            // Si existe equivalencia (CuentaBP es numérica, sin guiones y diferente de la original), la retorna
+            if (equivalencia.CuentaBP != null || equivalencia.BPOutReq.CodigoError == "0")
+            {
+                return equivalencia.CuentaBP;
+            }
+            // Si hay error, retorna la misma cuenta de entrada (sin modificación)
+            cuentaNormal = null;
+            return cuentaNormal;
+        }
+
     }
 }
