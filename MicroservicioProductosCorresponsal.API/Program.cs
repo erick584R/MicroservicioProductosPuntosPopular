@@ -2,6 +2,8 @@ using BancoPopular.Servicios.Servicio;
 using BancoPopular.Solicitudes.BantotalServices.BTS;
 using MicroservicioProductosCorresponsal.APP.CuentasAPP;
 using MicroservicioProductosCorresponsal.DAA.CuentasDA;
+using MicroservicioProductosCorresponsal.APP.Prestamos;
+using MicroservicioProductosCorresponsal.DAA.Prestamos;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -14,6 +16,8 @@ builder.Services.AddSwaggerGen();
 // DI de tu app
 builder.Services.AddScoped<ICuentasAPP, CuentasAPP>();
 builder.Services.AddScoped<ICuentasDA, CuentasDA>();
+builder.Services.AddScoped<IPrestamosAPP, PrestamosAPP>();
+builder.Services.AddScoped<IPrestamosDA, PrestamosDA>();
 
 // Dependencias externas (usa las implementaciones reales de tu solución)
 builder.Services.AddScoped<IBantotalServices, BantotalServices>();

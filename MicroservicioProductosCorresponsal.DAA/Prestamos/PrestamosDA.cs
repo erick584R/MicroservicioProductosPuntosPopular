@@ -76,10 +76,54 @@ namespace MicroservicioProductosCorresponsal.DAA.Prestamos
 
                 return respuesta;
             }
-            catch
+            catch(Exception ex)
             {
+                respuesta = new BPRespListaPrestamosDTO
+                {
+                    sdtProductosPrestamos = null,
+                    BtoutReq = new BtoutreqDTO()
+                    {
+                        Estado = $"Error - {ex.Message}"
+                    }
+                };
+                return respuesta;
+            }
 
+        }
+
+
+
+
+        public string FormatearProductoP_DPF_BP(string idOperacionBT)
+        {
+            if (string.IsNullOrWhiteSpace(idOperacionBT))
+                return string.Empty;
+
+            // longitud mínima esperada para usar los índices que usas (ajusta si tu formato diferente)
+            const int minLength = 46;
+            if (idOperacionBT.Length < minLength)
+            {
+                // devolver id original o un marcador para diagnóstico
+                return idOperacionBT;
             }
+
+            try
+            {
+                var part1 = idOperacionBT.Substring(10, 3);
+                var part2 = idOperacionBT.Substring(37, 9).TrimStart('0');
+                var part3 = idOperacionBT.Substring(34, 3);
+                if (string.IsNullOrEmpty(part3))
+                    part3 = "0";
+
+                var formatted = $"{part1}{part2}{part3}";
+                return formatted;
             }
+            catch (Exception)
+            {
+                // si algo inesperado falla, devolver el original (o "SIN CUENTA")
+                return idOperacionBT;
+            }
+        }
+
     }
 }
