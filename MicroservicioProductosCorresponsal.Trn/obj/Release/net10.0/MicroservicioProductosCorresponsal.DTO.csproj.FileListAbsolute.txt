@@ -11,3 +11,4 @@ C:\Users\erick.ramirez\Desktop\AgentesCorresponsal_V2.00\BackEnd\MicroservicioPr
 C:\Users\erick.ramirez\Desktop\AgentesCorresponsal_V2.00\BackEnd\MicroservicioProductosCorresponsal.API\MicroservicioProductosCorresponsal.Trn\obj\Release\net10.0\refint\MicroservicioProductosCorresponsal.DTO.dll
 C:\Users\erick.ramirez\Desktop\AgentesCorresponsal_V2.00\BackEnd\MicroservicioProductosCorresponsal.API\MicroservicioProductosCorresponsal.Trn\obj\Release\net10.0\MicroservicioProductosCorresponsal.DTO.pdb
 C:\Users\erick.ramirez\Desktop\AgentesCorresponsal_V2.00\BackEnd\MicroservicioProductosCorresponsal.API\MicroservicioProductosCorresponsal.Trn\obj\Release\net10.0\ref\MicroservicioProductosCorresponsal.DTO.dll
+C:\Users\erick.ramirez\Desktop\AgentesCorresponsal_V2.00\BackEnd\MicroservicioProductosCorresponsal.API\MicroservicioProductosCorresponsal.Trn\obj\Release\net10.0\Microser.70F5CBAC.Up2Date

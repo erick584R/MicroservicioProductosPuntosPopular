@@ -3,8 +3,36 @@
   "WorkspaceRootPath": "C:\\Users\\erick.ramirez\\Desktop\\AgentesCorresponsal_V2.00\\BackEnd\\MicroservicioProductosCorresponsal.API\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{0618C824-3ECC-5B87-1D55-AAE07701DB8D}|MicroservicioProductosCorresponsal.DAA\\MicroservicioProductosCorresponsal.DAA.csproj|c:\\users\\erick.ramirez\\desktop\\agentescorresponsal_v2.00\\backend\\microservicioproductoscorresponsal.api\\microservicioproductoscorresponsal.daa\\prestamos\\prestamosda.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0618C824-3ECC-5B87-1D55-AAE07701DB8D}|MicroservicioProductosCorresponsal.DAA\\MicroservicioProductosCorresponsal.DAA.csproj|solutionrelative:microservicioproductoscorresponsal.daa\\prestamos\\prestamosda.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FBA453D9-CC71-5E8E-97F5-0B784627CD0B}|MicroservicioProductosCorresponsal.Trn\\MicroservicioProductosCorresponsal.DTO.csproj|c:\\users\\erick.ramirez\\desktop\\agentescorresponsal_v2.00\\backend\\microservicioproductoscorresponsal.api\\microservicioproductoscorresponsal.trn\\prestamos\\reqlistaprestamosdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FBA453D9-CC71-5E8E-97F5-0B784627CD0B}|MicroservicioProductosCorresponsal.Trn\\MicroservicioProductosCorresponsal.DTO.csproj|solutionrelative:microservicioproductoscorresponsal.trn\\prestamos\\reqlistaprestamosdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FBA453D9-CC71-5E8E-97F5-0B784627CD0B}|MicroservicioProductosCorresponsal.Trn\\MicroservicioProductosCorresponsal.DTO.csproj|c:\\users\\erick.ramirez\\desktop\\agentescorresponsal_v2.00\\backend\\microservicioproductoscorresponsal.api\\microservicioproductoscorresponsal.trn\\cuentas\\reqcuentasbtdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FBA453D9-CC71-5E8E-97F5-0B784627CD0B}|MicroservicioProductosCorresponsal.Trn\\MicroservicioProductosCorresponsal.DTO.csproj|solutionrelative:microservicioproductoscorresponsal.trn\\cuentas\\reqcuentasbtdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FBA453D9-CC71-5E8E-97F5-0B784627CD0B}|MicroservicioProductosCorresponsal.Trn\\MicroservicioProductosCorresponsal.DTO.csproj|c:\\users\\erick.ramirez\\desktop\\agentescorresponsal_v2.00\\backend\\microservicioproductoscorresponsal.api\\microservicioproductoscorresponsal.trn\\cuentas\\requestinfocuentadto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FBA453D9-CC71-5E8E-97F5-0B784627CD0B}|MicroservicioProductosCorresponsal.Trn\\MicroservicioProductosCorresponsal.DTO.csproj|solutionrelative:microservicioproductoscorresponsal.trn\\cuentas\\requestinfocuentadto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{0618C824-3ECC-5B87-1D55-AAE07701DB8D}|MicroservicioProductosCorresponsal.DAA\\MicroservicioProductosCorresponsal.DAA.csproj|c:\\users\\erick.ramirez\\desktop\\agentescorresponsal_v2.00\\backend\\microservicioproductoscorresponsal.api\\microservicioproductoscorresponsal.daa\\cuentasda\\cuentasda.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0618C824-3ECC-5B87-1D55-AAE07701DB8D}|MicroservicioProductosCorresponsal.DAA\\MicroservicioProductosCorresponsal.DAA.csproj|solutionrelative:microservicioproductoscorresponsal.daa\\cuentasda\\cuentasda.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0618C824-3ECC-5B87-1D55-AAE07701DB8D}|MicroservicioProductosCorresponsal.DAA\\MicroservicioProductosCorresponsal.DAA.csproj|c:\\users\\erick.ramirez\\desktop\\agentescorresponsal_v2.00\\backend\\microservicioproductoscorresponsal.api\\microservicioproductoscorresponsal.daa\\prestamos\\iprestamosda.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0618C824-3ECC-5B87-1D55-AAE07701DB8D}|MicroservicioProductosCorresponsal.DAA\\MicroservicioProductosCorresponsal.DAA.csproj|solutionrelative:microservicioproductoscorresponsal.daa\\prestamos\\iprestamosda.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0618C824-3ECC-5B87-1D55-AAE07701DB8D}|MicroservicioProductosCorresponsal.DAA\\MicroservicioProductosCorresponsal.DAA.csproj|c:\\users\\erick.ramirez\\desktop\\agentescorresponsal_v2.00\\backend\\microservicioproductoscorresponsal.api\\microservicioproductoscorresponsal.daa\\cuentasda\\icuentasda.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0618C824-3ECC-5B87-1D55-AAE07701DB8D}|MicroservicioProductosCorresponsal.DAA\\MicroservicioProductosCorresponsal.DAA.csproj|solutionrelative:microservicioproductoscorresponsal.daa\\cuentasda\\icuentasda.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FBA453D9-CC71-5E8E-97F5-0B784627CD0B}|MicroservicioProductosCorresponsal.Trn\\MicroservicioProductosCorresponsal.DTO.csproj|c:\\users\\erick.ramirez\\desktop\\agentescorresponsal_v2.00\\backend\\microservicioproductoscorresponsal.api\\microservicioproductoscorresponsal.trn\\prestamos\\responsebplistaprestamosdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FBA453D9-CC71-5E8E-97F5-0B784627CD0B}|MicroservicioProductosCorresponsal.Trn\\MicroservicioProductosCorresponsal.DTO.csproj|solutionrelative:microservicioproductoscorresponsal.trn\\prestamos\\responsebplistaprestamosdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{ABF3E23B-2A14-6D73-A84B-C2A00EEC2120}|MicroservicioProductosCorresponsal.APP\\MicroservicioProductosCorresponsal.APP.csproj|c:\\users\\erick.ramirez\\desktop\\agentescorresponsal_v2.00\\backend\\microservicioproductoscorresponsal.api\\microservicioproductoscorresponsal.app\\cuentasapp\\cuentasapp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -19,16 +47,8 @@
       "RelativeMoniker": "D:0:0:{92364849-0509-8909-1217-F4ADBC302519}|MicroservicioProductosCorresponsal.API\\MicroservicioProductosCorresponsal.API.csproj|solutionrelative:microservicioproductoscorresponsal.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FBA453D9-CC71-5E8E-97F5-0B784627CD0B}|MicroservicioProductosCorresponsal.Trn\\MicroservicioProductosCorresponsal.DTO.csproj|c:\\users\\erick.ramirez\\desktop\\agentescorresponsal_v2.00\\backend\\microservicioproductoscorresponsal.api\\microservicioproductoscorresponsal.trn\\cuentas\\requestinfocuentadto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FBA453D9-CC71-5E8E-97F5-0B784627CD0B}|MicroservicioProductosCorresponsal.Trn\\MicroservicioProductosCorresponsal.DTO.csproj|solutionrelative:microservicioproductoscorresponsal.trn\\cuentas\\requestinfocuentadto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{ABF3E23B-2A14-6D73-A84B-C2A00EEC2120}|MicroservicioProductosCorresponsal.APP\\MicroservicioProductosCorresponsal.APP.csproj|c:\\users\\erick.ramirez\\desktop\\agentescorresponsal_v2.00\\backend\\microservicioproductoscorresponsal.api\\microservicioproductoscorresponsal.app\\cuentasapp\\icuentasapp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{ABF3E23B-2A14-6D73-A84B-C2A00EEC2120}|MicroservicioProductosCorresponsal.APP\\MicroservicioProductosCorresponsal.APP.csproj|solutionrelative:microservicioproductoscorresponsal.app\\cuentasapp\\icuentasapp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0618C824-3ECC-5B87-1D55-AAE07701DB8D}|MicroservicioProductosCorresponsal.DAA\\MicroservicioProductosCorresponsal.DAA.csproj|c:\\users\\erick.ramirez\\desktop\\agentescorresponsal_v2.00\\backend\\microservicioproductoscorresponsal.api\\microservicioproductoscorresponsal.daa\\cuentasda\\icuentasda.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0618C824-3ECC-5B87-1D55-AAE07701DB8D}|MicroservicioProductosCorresponsal.DAA\\MicroservicioProductosCorresponsal.DAA.csproj|solutionrelative:microservicioproductoscorresponsal.daa\\cuentasda\\icuentasda.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{92364849-0509-8909-1217-F4ADBC302519}|MicroservicioProductosCorresponsal.API\\MicroservicioProductosCorresponsal.API.csproj|c:\\users\\erick.ramirez\\desktop\\agentescorresponsal_v2.00\\backend\\microservicioproductoscorresponsal.api\\microservicioproductoscorresponsal.api\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
@@ -46,7 +66,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Bookmark",
@@ -70,41 +90,67 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "CuentasDA.cs",
-              "DocumentMoniker": "C:\\Users\\erick.ramirez\\Desktop\\AgentesCorresponsal_V2.00\\BackEnd\\MicroservicioProductosCorresponsal.API\\MicroservicioProductosCorresponsal.DAA\\CuentasDA\\CuentasDA.cs",
-              "RelativeDocumentMoniker": "MicroservicioProductosCorresponsal.DAA\\CuentasDA\\CuentasDA.cs",
-              "ToolTip": "C:\\Users\\erick.ramirez\\Desktop\\AgentesCorresponsal_V2.00\\BackEnd\\MicroservicioProductosCorresponsal.API\\MicroservicioProductosCorresponsal.DAA\\CuentasDA\\CuentasDA.cs",
-              "RelativeToolTip": "MicroservicioProductosCorresponsal.DAA\\CuentasDA\\CuentasDA.cs",
-              "ViewState": "AgIAADcAAAAAAAAAAAAQwEUAAAAwAAAAAAAAAA==",
+              "DocumentIndex": 2,
+              "Title": "ReqCuentasBTDTO.cs",
+              "DocumentMoniker": "C:\\Users\\erick.ramirez\\Desktop\\AgentesCorresponsal_V2.00\\BackEnd\\MicroservicioProductosCorresponsal.API\\MicroservicioProductosCorresponsal.Trn\\Cuentas\\ReqCuentasBTDTO.cs",
+              "RelativeDocumentMoniker": "MicroservicioProductosCorresponsal.Trn\\Cuentas\\ReqCuentasBTDTO.cs",
+              "ToolTip": "C:\\Users\\erick.ramirez\\Desktop\\AgentesCorresponsal_V2.00\\BackEnd\\MicroservicioProductosCorresponsal.API\\MicroservicioProductosCorresponsal.Trn\\Cuentas\\ReqCuentasBTDTO.cs",
+              "RelativeToolTip": "MicroservicioProductosCorresponsal.Trn\\Cuentas\\ReqCuentasBTDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-03T00:41:49.835Z",
+              "WhenOpened": "2026-08-28T18:26:37.275Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "PrestamosDA.cs",
+              "DocumentMoniker": "C:\\Users\\erick.ramirez\\Desktop\\AgentesCorresponsal_V2.00\\BackEnd\\MicroservicioProductosCorresponsal.API\\MicroservicioProductosCorresponsal.DAA\\Prestamos\\PrestamosDA.cs",
+              "RelativeDocumentMoniker": "MicroservicioProductosCorresponsal.DAA\\Prestamos\\PrestamosDA.cs",
+              "ToolTip": "C:\\Users\\erick.ramirez\\Desktop\\AgentesCorresponsal_V2.00\\BackEnd\\MicroservicioProductosCorresponsal.API\\MicroservicioProductosCorresponsal.DAA\\Prestamos\\PrestamosDA.cs",
+              "RelativeToolTip": "MicroservicioProductosCorresponsal.DAA\\Prestamos\\PrestamosDA.cs",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAtwCwAAAA4AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-28T17:27:48.272Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "ICuentasAPP.cs",
-              "DocumentMoniker": "C:\\Users\\erick.ramirez\\Desktop\\AgentesCorresponsal_V2.00\\BackEnd\\MicroservicioProductosCorresponsal.API\\MicroservicioProductosCorresponsal.APP\\CuentasAPP\\ICuentasAPP.cs",
-              "RelativeDocumentMoniker": "MicroservicioProductosCorresponsal.APP\\CuentasAPP\\ICuentasAPP.cs",
-              "ToolTip": "C:\\Users\\erick.ramirez\\Desktop\\AgentesCorresponsal_V2.00\\BackEnd\\MicroservicioProductosCorresponsal.API\\MicroservicioProductosCorresponsal.APP\\CuentasAPP\\ICuentasAPP.cs",
-              "RelativeToolTip": "MicroservicioProductosCorresponsal.APP\\CuentasAPP\\ICuentasAPP.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAkAAAAkAAAAAAAAAA==",
+              "Title": "IPrestamosDA.cs",
+              "DocumentMoniker": "C:\\Users\\erick.ramirez\\Desktop\\AgentesCorresponsal_V2.00\\BackEnd\\MicroservicioProductosCorresponsal.API\\MicroservicioProductosCorresponsal.DAA\\Prestamos\\IPrestamosDA.cs",
+              "RelativeDocumentMoniker": "MicroservicioProductosCorresponsal.DAA\\Prestamos\\IPrestamosDA.cs",
+              "ToolTip": "C:\\Users\\erick.ramirez\\Desktop\\AgentesCorresponsal_V2.00\\BackEnd\\MicroservicioProductosCorresponsal.API\\MicroservicioProductosCorresponsal.DAA\\Prestamos\\IPrestamosDA.cs",
+              "RelativeToolTip": "MicroservicioProductosCorresponsal.DAA\\Prestamos\\IPrestamosDA.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAABWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-03T00:48:00.736Z",
+              "WhenOpened": "2026-08-28T17:27:39.341Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\erick.ramirez\\Desktop\\AgentesCorresponsal_V2.00\\BackEnd\\MicroservicioProductosCorresponsal.API\\MicroservicioProductosCorresponsal.API\\appsettings.json",
-              "RelativeDocumentMoniker": "MicroservicioProductosCorresponsal.API\\appsettings.json",
-              "ToolTip": "C:\\Users\\erick.ramirez\\Desktop\\AgentesCorresponsal_V2.00\\BackEnd\\MicroservicioProductosCorresponsal.API\\MicroservicioProductosCorresponsal.API\\appsettings.json",
-              "RelativeToolTip": "MicroservicioProductosCorresponsal.API\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAA1AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2026-08-03T00:54:13.14Z",
+              "DocumentIndex": 1,
+              "Title": "ReqListaPrestamosDTO.cs",
+              "DocumentMoniker": "C:\\Users\\erick.ramirez\\Desktop\\AgentesCorresponsal_V2.00\\BackEnd\\MicroservicioProductosCorresponsal.API\\MicroservicioProductosCorresponsal.Trn\\Prestamos\\ReqListaPrestamosDTO.cs",
+              "RelativeDocumentMoniker": "MicroservicioProductosCorresponsal.Trn\\Prestamos\\ReqListaPrestamosDTO.cs",
+              "ToolTip": "C:\\Users\\erick.ramirez\\Desktop\\AgentesCorresponsal_V2.00\\BackEnd\\MicroservicioProductosCorresponsal.API\\MicroservicioProductosCorresponsal.Trn\\Prestamos\\ReqListaPrestamosDTO.cs",
+              "RelativeToolTip": "MicroservicioProductosCorresponsal.Trn\\Prestamos\\ReqListaPrestamosDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-28T17:19:30.885Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "CuentasDA.cs",
+              "DocumentMoniker": "C:\\Users\\erick.ramirez\\Desktop\\AgentesCorresponsal_V2.00\\BackEnd\\MicroservicioProductosCorresponsal.API\\MicroservicioProductosCorresponsal.DAA\\CuentasDA\\CuentasDA.cs",
+              "RelativeDocumentMoniker": "MicroservicioProductosCorresponsal.DAA\\CuentasDA\\CuentasDA.cs",
+              "ToolTip": "C:\\Users\\erick.ramirez\\Desktop\\AgentesCorresponsal_V2.00\\BackEnd\\MicroservicioProductosCorresponsal.API\\MicroservicioProductosCorresponsal.DAA\\CuentasDA\\CuentasDA.cs",
+              "RelativeToolTip": "MicroservicioProductosCorresponsal.DAA\\CuentasDA\\CuentasDA.cs",
+              "ViewState": "AgIAAD8AAAAAAAAAAAAmwB8AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-03T00:41:49.835Z",
               "EditorCaption": ""
             },
             {
@@ -122,7 +168,82 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "RequestInfoCuentaDTO.cs",
+              "DocumentMoniker": "C:\\Users\\erick.ramirez\\Desktop\\AgentesCorresponsal_V2.00\\BackEnd\\MicroservicioProductosCorresponsal.API\\MicroservicioProductosCorresponsal.Trn\\Cuentas\\RequestInfoCuentaDTO.cs",
+              "RelativeDocumentMoniker": "MicroservicioProductosCorresponsal.Trn\\Cuentas\\RequestInfoCuentaDTO.cs",
+              "ToolTip": "C:\\Users\\erick.ramirez\\Desktop\\AgentesCorresponsal_V2.00\\BackEnd\\MicroservicioProductosCorresponsal.API\\MicroservicioProductosCorresponsal.Trn\\Cuentas\\RequestInfoCuentaDTO.cs",
+              "RelativeToolTip": "MicroservicioProductosCorresponsal.Trn\\Cuentas\\RequestInfoCuentaDTO.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAUwAkAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-03T00:24:24.843Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 7,
+              "Title": "ResponseBPListaPrestamosDTO.cs",
+              "DocumentMoniker": "C:\\Users\\erick.ramirez\\Desktop\\AgentesCorresponsal_V2.00\\BackEnd\\MicroservicioProductosCorresponsal.API\\MicroservicioProductosCorresponsal.Trn\\Prestamos\\ResponseBPListaPrestamosDTO.cs",
+              "RelativeDocumentMoniker": "MicroservicioProductosCorresponsal.Trn\\Prestamos\\ResponseBPListaPrestamosDTO.cs",
+              "ToolTip": "C:\\Users\\erick.ramirez\\Desktop\\AgentesCorresponsal_V2.00\\BackEnd\\MicroservicioProductosCorresponsal.API\\MicroservicioProductosCorresponsal.Trn\\Prestamos\\ResponseBPListaPrestamosDTO.cs",
+              "RelativeToolTip": "MicroservicioProductosCorresponsal.Trn\\Prestamos\\ResponseBPListaPrestamosDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-28T17:22:01.556Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "CuentasAPP.cs",
+              "DocumentMoniker": "C:\\Users\\erick.ramirez\\Desktop\\AgentesCorresponsal_V2.00\\BackEnd\\MicroservicioProductosCorresponsal.API\\MicroservicioProductosCorresponsal.APP\\CuentasAPP\\CuentasAPP.cs",
+              "RelativeDocumentMoniker": "MicroservicioProductosCorresponsal.APP\\CuentasAPP\\CuentasAPP.cs",
+              "ToolTip": "C:\\Users\\erick.ramirez\\Desktop\\AgentesCorresponsal_V2.00\\BackEnd\\MicroservicioProductosCorresponsal.API\\MicroservicioProductosCorresponsal.APP\\CuentasAPP\\CuentasAPP.cs",
+              "RelativeToolTip": "MicroservicioProductosCorresponsal.APP\\CuentasAPP\\CuentasAPP.cs",
+              "ViewState": "AgIAADgAAAAAAAAAAAAuwEsAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-20T15:12:05.577Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "ProductosCorresponsalController.cs",
+              "DocumentMoniker": "C:\\Users\\erick.ramirez\\Desktop\\AgentesCorresponsal_V2.00\\BackEnd\\MicroservicioProductosCorresponsal.API\\MicroservicioProductosCorresponsal.API\\Controllers\\ProductosCorresponsalController.cs",
+              "RelativeDocumentMoniker": "MicroservicioProductosCorresponsal.API\\Controllers\\ProductosCorresponsalController.cs",
+              "ToolTip": "C:\\Users\\erick.ramirez\\Desktop\\AgentesCorresponsal_V2.00\\BackEnd\\MicroservicioProductosCorresponsal.API\\MicroservicioProductosCorresponsal.API\\Controllers\\ProductosCorresponsalController.cs",
+              "RelativeToolTip": "MicroservicioProductosCorresponsal.API\\Controllers\\ProductosCorresponsalController.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAEwBYAAACBAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-03T01:02:12.028Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\erick.ramirez\\Desktop\\AgentesCorresponsal_V2.00\\BackEnd\\MicroservicioProductosCorresponsal.API\\MicroservicioProductosCorresponsal.API\\appsettings.json",
+              "RelativeDocumentMoniker": "MicroservicioProductosCorresponsal.API\\appsettings.json",
+              "ToolTip": "C:\\Users\\erick.ramirez\\Desktop\\AgentesCorresponsal_V2.00\\BackEnd\\MicroservicioProductosCorresponsal.API\\MicroservicioProductosCorresponsal.API\\appsettings.json",
+              "RelativeToolTip": "MicroservicioProductosCorresponsal.API\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAA1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-08-03T00:54:13.14Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "ICuentasAPP.cs",
+              "DocumentMoniker": "C:\\Users\\erick.ramirez\\Desktop\\AgentesCorresponsal_V2.00\\BackEnd\\MicroservicioProductosCorresponsal.API\\MicroservicioProductosCorresponsal.APP\\CuentasAPP\\ICuentasAPP.cs",
+              "RelativeDocumentMoniker": "MicroservicioProductosCorresponsal.APP\\CuentasAPP\\ICuentasAPP.cs",
+              "ToolTip": "C:\\Users\\erick.ramirez\\Desktop\\AgentesCorresponsal_V2.00\\BackEnd\\MicroservicioProductosCorresponsal.API\\MicroservicioProductosCorresponsal.APP\\CuentasAPP\\ICuentasAPP.cs",
+              "RelativeToolTip": "MicroservicioProductosCorresponsal.APP\\CuentasAPP\\ICuentasAPP.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAkAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-03T00:48:00.736Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
               "Title": "launchSettings.json",
               "DocumentMoniker": "C:\\Users\\erick.ramirez\\Desktop\\AgentesCorresponsal_V2.00\\BackEnd\\MicroservicioProductosCorresponsal.API\\MicroservicioProductosCorresponsal.API\\Properties\\launchSettings.json",
               "RelativeDocumentMoniker": "MicroservicioProductosCorresponsal.API\\Properties\\launchSettings.json",
@@ -134,46 +255,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "ProductosCorresponsalController.cs",
-              "DocumentMoniker": "C:\\Users\\erick.ramirez\\Desktop\\AgentesCorresponsal_V2.00\\BackEnd\\MicroservicioProductosCorresponsal.API\\MicroservicioProductosCorresponsal.API\\Controllers\\ProductosCorresponsalController.cs",
-              "RelativeDocumentMoniker": "MicroservicioProductosCorresponsal.API\\Controllers\\ProductosCorresponsalController.cs",
-              "ToolTip": "C:\\Users\\erick.ramirez\\Desktop\\AgentesCorresponsal_V2.00\\BackEnd\\MicroservicioProductosCorresponsal.API\\MicroservicioProductosCorresponsal.API\\Controllers\\ProductosCorresponsalController.cs",
-              "RelativeToolTip": "MicroservicioProductosCorresponsal.API\\Controllers\\ProductosCorresponsalController.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAA6wBYAAABmAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-03T01:02:12.028Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "RequestInfoCuentaDTO.cs",
-              "DocumentMoniker": "C:\\Users\\erick.ramirez\\Desktop\\AgentesCorresponsal_V2.00\\BackEnd\\MicroservicioProductosCorresponsal.API\\MicroservicioProductosCorresponsal.Trn\\Cuentas\\RequestInfoCuentaDTO.cs",
-              "RelativeDocumentMoniker": "MicroservicioProductosCorresponsal.Trn\\Cuentas\\RequestInfoCuentaDTO.cs",
-              "ToolTip": "C:\\Users\\erick.ramirez\\Desktop\\AgentesCorresponsal_V2.00\\BackEnd\\MicroservicioProductosCorresponsal.API\\MicroservicioProductosCorresponsal.Trn\\Cuentas\\RequestInfoCuentaDTO.cs",
-              "RelativeToolTip": "MicroservicioProductosCorresponsal.Trn\\Cuentas\\RequestInfoCuentaDTO.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAwAAAAdAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-03T00:24:24.843Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "CuentasAPP.cs",
-              "DocumentMoniker": "C:\\Users\\erick.ramirez\\Desktop\\AgentesCorresponsal_V2.00\\BackEnd\\MicroservicioProductosCorresponsal.API\\MicroservicioProductosCorresponsal.APP\\CuentasAPP\\CuentasAPP.cs",
-              "RelativeDocumentMoniker": "MicroservicioProductosCorresponsal.APP\\CuentasAPP\\CuentasAPP.cs",
-              "ToolTip": "C:\\Users\\erick.ramirez\\Desktop\\AgentesCorresponsal_V2.00\\BackEnd\\MicroservicioProductosCorresponsal.API\\MicroservicioProductosCorresponsal.APP\\CuentasAPP\\CuentasAPP.cs",
-              "RelativeToolTip": "MicroservicioProductosCorresponsal.APP\\CuentasAPP\\CuentasAPP.cs",
-              "ViewState": "AgIAABgAAAAAAAAAAAAYwCsAAAAQAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-12T22:55:29.128Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 13,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\erick.ramirez\\Desktop\\AgentesCorresponsal_V2.00\\BackEnd\\MicroservicioProductosCorresponsal.API\\MicroservicioProductosCorresponsal.API\\Program.cs",
               "RelativeDocumentMoniker": "MicroservicioProductosCorresponsal.API\\Program.cs",

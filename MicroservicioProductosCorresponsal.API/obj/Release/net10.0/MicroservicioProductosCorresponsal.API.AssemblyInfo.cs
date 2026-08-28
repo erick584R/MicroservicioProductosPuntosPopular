@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("MicroservicioProductosCorresponsal.API")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+598f8f4fdf09b8194647959a0e971e02dae4934c")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+46459c16888da6d42d08054aea7f1b5f0b7ad4c6")]
 [assembly: System.Reflection.AssemblyProductAttribute("MicroservicioProductosCorresponsal.API")]
 [assembly: System.Reflection.AssemblyTitleAttribute("MicroservicioProductosCorresponsal.API")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
