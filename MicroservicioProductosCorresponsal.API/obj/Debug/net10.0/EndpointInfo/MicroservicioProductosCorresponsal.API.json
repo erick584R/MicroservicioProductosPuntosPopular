@@ -52,6 +52,102 @@
           }
         }
       }
+    },
+    "/api/ProductosCorresponsal/v1/BancoPopular/obtener-lista-prestamos": {
+      "post": {
+        "tags": [
+          "ProductosCorresponsal"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ReqListaPrestamosDTO"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ReqListaPrestamosDTO"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/ReqListaPrestamosDTO"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/ResponseBPListaPrestamosDTO"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ResponseBPListaPrestamosDTO"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ResponseBPListaPrestamosDTO"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/ProductosCorresponsal/v1/BancoPopular/Consultar-Prestamo": {
+      "post": {
+        "tags": [
+          "ProductosCorresponsal"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ReqConsultaPrestamoDTO"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ReqConsultaPrestamoDTO"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/ReqConsultaPrestamoDTO"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/ConsultaCuotasBTResponseDTO"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ConsultaCuotasBTResponseDTO"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ConsultaCuotasBTResponseDTO"
+                }
+              }
+            }
+          }
+        }
+      }
     }
   },
   "components": {
@@ -99,6 +195,213 @@
           },
           "token": {
             "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "BtinreqDTO": {
+        "type": "object",
+        "properties": {
+          "device": {
+            "type": "string",
+            "nullable": true
+          },
+          "usuario": {
+            "type": "string",
+            "nullable": true
+          },
+          "requerimiento": {
+            "type": "string",
+            "nullable": true
+          },
+          "canal": {
+            "type": "string",
+            "nullable": true
+          },
+          "token": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "BtoutreqDTO": {
+        "type": "object",
+        "properties": {
+          "estado": {
+            "type": "string",
+            "nullable": true
+          },
+          "fecha": {
+            "type": "string",
+            "nullable": true
+          },
+          "hora": {
+            "type": "string",
+            "nullable": true
+          },
+          "numero": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "servicio": {
+            "type": "string",
+            "nullable": true
+          },
+          "requerimiento": {
+            "type": "string",
+            "nullable": true
+          },
+          "canal": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "ConsultaCuotasBTResponseDTO": {
+        "type": "object",
+        "properties": {
+          "btinreq": {
+            "$ref": "#/components/schemas/BtinreqDTO"
+          },
+          "canal": {
+            "type": "string",
+            "nullable": true
+          },
+          "tipoDocumento": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "documento": {
+            "type": "string",
+            "nullable": true
+          },
+          "credito": {
+            "type": "string",
+            "nullable": true
+          },
+          "fecha": {
+            "type": "string",
+            "nullable": true
+          },
+          "hora": {
+            "type": "string",
+            "nullable": true
+          },
+          "idCorresponsal": {
+            "type": "string",
+            "nullable": true
+          },
+          "idTerminal": {
+            "type": "string",
+            "nullable": true
+          },
+          "cantidadCuotas": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "nombreCliente": {
+            "type": "string",
+            "nullable": true
+          },
+          "cuenta": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "moneda": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "clienteUId": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "listaCreditos": {
+            "$ref": "#/components/schemas/ListaCreditosWrapperDTO"
+          },
+          "idBantotal": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "resultado": {
+            "type": "string",
+            "nullable": true
+          },
+          "descripcion": {
+            "type": "string",
+            "nullable": true
+          },
+          "erroresnegocio": {
+            "nullable": true
+          },
+          "bpOutReq": {
+            "$ref": "#/components/schemas/BPOutReqDTO"
+          },
+          "btoutreq": {
+            "$ref": "#/components/schemas/BtoutreqDTO"
+          }
+        },
+        "additionalProperties": false
+      },
+      "ListaCreditosItemDTO": {
+        "type": "object",
+        "properties": {
+          "nroCredito": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "operacionUID": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "listaCuotas": {
+            "$ref": "#/components/schemas/ListaCuotasWrapperDTO"
+          },
+          "montoCancTotal": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "monedaCred": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "ListaCreditosWrapperDTO": {
+        "type": "object",
+        "properties": {
+          "listaCreditos": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/ListaCreditosItemDTO"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "ListaCuotasWrapperDTO": {
+        "type": "object",
+        "properties": {
+          "sdtBBTADetalleCuota": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/SdtBBTADetalleCuotaDTO"
+            },
             "nullable": true
           }
         },
@@ -187,6 +490,71 @@
         },
         "additionalProperties": false
       },
+      "ReqConsultaPrestamoDTO": {
+        "type": "object",
+        "properties": {
+          "bpInReq": {
+            "$ref": "#/components/schemas/BpInReqDTO"
+          },
+          "credito": {
+            "type": "string",
+            "nullable": true
+          },
+          "documento": {
+            "type": "string",
+            "nullable": true
+          },
+          "tipoDocumento": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "moneda": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "cantidadCuotas": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "canal": {
+            "type": "string",
+            "nullable": true
+          },
+          "fecha": {
+            "type": "string",
+            "nullable": true
+          },
+          "hora": {
+            "type": "string",
+            "nullable": true
+          },
+          "idCorresponsal": {
+            "type": "string",
+            "nullable": true
+          },
+          "idTerminal": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "ReqListaPrestamosDTO": {
+        "type": "object",
+        "properties": {
+          "bpInReq": {
+            "$ref": "#/components/schemas/BpInReqDTO"
+          },
+          "numeroDocumento": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
       "RequestInfoCuentaDTO": {
         "type": "object",
         "properties": {
@@ -196,6 +564,18 @@
           "cuenta": {
             "type": "string",
             "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "ResponseBPListaPrestamosDTO": {
+        "type": "object",
+        "properties": {
+          "prestamos": {
+            "$ref": "#/components/schemas/SdtProductosPrestamos"
+          },
+          "bpOutReq": {
+            "$ref": "#/components/schemas/BPOutReqDTO"
           }
         },
         "additionalProperties": false
@@ -220,6 +600,70 @@
         "properties": {
           "productosPasivos": {
             "$ref": "#/components/schemas/ProductosPasivos"
+          }
+        },
+        "additionalProperties": false
+      },
+      "SBTProductoPrestamo": {
+        "type": "object",
+        "properties": {
+          "sucursal": {
+            "type": "string",
+            "nullable": true
+          },
+          "saldo": {
+            "type": "number",
+            "format": "double"
+          },
+          "idOperacionBT": {
+            "type": "string",
+            "nullable": true
+          },
+          "producto": {
+            "$ref": "#/components/schemas/Producto"
+          },
+          "cuentaFormateada": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "SdtBBTADetalleCuotaDTO": {
+        "type": "object",
+        "properties": {
+          "numCuo": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "fecVec": {
+            "type": "string",
+            "nullable": true
+          },
+          "tipo": {
+            "type": "string",
+            "nullable": true
+          },
+          "impCuota": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "impMora": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "totPago": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "impInteres": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
           }
         },
         "additionalProperties": false
@@ -427,6 +871,19 @@
           },
           "tipoDocumento": {
             "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "SdtProductosPrestamos": {
+        "type": "object",
+        "properties": {
+          "sBTProductoPrestamo": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/SBTProductoPrestamo"
+            },
             "nullable": true
           }
         },

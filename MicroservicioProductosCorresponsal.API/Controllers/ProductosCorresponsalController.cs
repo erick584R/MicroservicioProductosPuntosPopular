@@ -30,5 +30,10 @@ namespace MicroservicioProductosCorresponsal.API.Controllers
         [HttpPost("v1/BancoPopular/obtener-lista-prestamos")]
         public async Task<ResponseBPListaPrestamosDTO> ObtenerListaPrestamos(ReqListaPrestamosDTO reqCuentasAhorroDTO) => await 
             _prestamosApp.ObtenerPrestamos(reqCuentasAhorroDTO);
+
+
+        [HttpPost("v1/BancoPopular/Consultar-Prestamo")]
+        public async Task<ConsultaCuotasBTResponseDTO> ConsultarDetallesPrestamos(ReqConsultaPrestamoDTO request)
+            => await _prestamosApp.ConsultarDetallesPrestamoAPP(request);
     }
 }

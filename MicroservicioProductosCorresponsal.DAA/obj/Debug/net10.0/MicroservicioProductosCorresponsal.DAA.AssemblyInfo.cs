@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("MicroservicioProductosCorresponsal.DAA")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ab234c6dc60982b699175b2d68081084fdc7bc9a")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c4701583cb71775dafe0732a636fecf925923ffd")]
 [assembly: System.Reflection.AssemblyProductAttribute("MicroservicioProductosCorresponsal.DAA")]
 [assembly: System.Reflection.AssemblyTitleAttribute("MicroservicioProductosCorresponsal.DAA")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

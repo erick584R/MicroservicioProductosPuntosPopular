@@ -29,8 +29,8 @@ namespace MicroservicioProductosCorresponsal.APP.Prestamos
                     {
                         BpOutReq = new BPOutReqDTO
                         {
-                            CodigoError = "1001",
-                            MensajeError = _configuration.GetSection("MensajesError")?["1001"] ?? "El canal es requerido.",
+                            CodigoError = "1012",
+                            MensajeError = _configuration.GetSection("MensajesError")?["1012"] ?? "El canal es requerido.",
                             FechaHora = DateTime.Now
                         }
                     };
@@ -45,8 +45,8 @@ namespace MicroservicioProductosCorresponsal.APP.Prestamos
                     {
                         BpOutReq = new BPOutReqDTO
                         {
-                            CodigoError = "1031",
-                            MensajeError = _configuration.GetSection("MensajesError")?["1031"] ?? "Canal no valido.",
+                            CodigoError = "1012",
+                            MensajeError = _configuration.GetSection("MensajesError")?["1012"] ?? "Canal no valido.",
                             FechaHora = DateTime.Now
                         }
                     };
@@ -60,8 +60,8 @@ namespace MicroservicioProductosCorresponsal.APP.Prestamos
                     {
                         BpOutReq = new BPOutReqDTO
                         {
-                            CodigoError = "1006",
-                            MensajeError = _configuration.GetSection("MensajesError")?["1006"] ?? "El Número de Documento es requerido.",
+                            CodigoError = "1016",
+                            MensajeError = _configuration.GetSection("MensajesError")?["1016"] ?? "El Número de Documento es requerido.",
                             FechaHora = DateTime.Now
                         }
                     };
@@ -76,8 +76,8 @@ namespace MicroservicioProductosCorresponsal.APP.Prestamos
                     {
                         BpOutReq = new BPOutReqDTO
                         {
-                            CodigoError = "1005",
-                            MensajeError = _configuration.GetSection("MensajesError")?["1005"] ?? "No se pudo realizar la Transacción.",
+                            CodigoError = "1017",
+                            MensajeError = _configuration.GetSection("MensajesError")?["1017"] ?? "No se pudo procesar la solicitud.",
                             FechaHora = DateTime.Now
                         }
                     };
@@ -95,8 +95,8 @@ namespace MicroservicioProductosCorresponsal.APP.Prestamos
                         {
                             result.BpOutReq = new BPOutReqDTO
                             {
-                                CodigoError = "1002",
-                                MensajeError = _configuration.GetSection("MensajesError")?["1002"] ?? "No se encontraron préstamos para el cliente.",
+                                CodigoError = "1018",
+                                MensajeError = _configuration.GetSection("MensajesError")?["1018"] ?? "No se encontraron los préstamos del cliente.",
                                 FechaHora = DateTime.Now
                             };
                             return result;
@@ -161,7 +161,7 @@ namespace MicroservicioProductosCorresponsal.APP.Prestamos
                         // Servicio devolvió BtoutReq con estado distinto de OK
                         result.BpOutReq = new BPOutReqDTO
                         {
-                            CodigoError = "1005",
+                            CodigoError = "1017",
                             MensajeError = respDA.BtoutReq.Estado ?? respDA.erroresNegocio?.ToString() ?? "Error en servicio",
                             FechaHora = DateTime.Now
                         };
@@ -173,7 +173,7 @@ namespace MicroservicioProductosCorresponsal.APP.Prestamos
                     // DA devolvió errores de negocio
                     result.BpOutReq = new BPOutReqDTO
                     {
-                        CodigoError = "1005",
+                        CodigoError = "1017",
                         MensajeError = respDA.erroresNegocio.ToString(),
                         FechaHora = DateTime.Now
                     };
@@ -234,8 +234,8 @@ namespace MicroservicioProductosCorresponsal.APP.Prestamos
                         // No hay datos pero tampoco errores explícitos: devolver código que indique ausencia
                         result.BpOutReq = new BPOutReqDTO
                         {
-                            CodigoError = "1002",
-                            MensajeError = _configuration.GetSection("MensajesError")?["1002"] ?? "No se encontraron préstamos para el cliente.",
+                            CodigoError = "1018",
+                            MensajeError = _configuration.GetSection("MensajesError")?["1018"] ?? "No se encontraron los préstamos del cliente.",
                             FechaHora = DateTime.Now
                         };
                         return result;
@@ -248,9 +248,102 @@ namespace MicroservicioProductosCorresponsal.APP.Prestamos
                 {
                     BpOutReq = new BPOutReqDTO
                     {
-                        CodigoError = "500",
+                        CodigoError = "1018",
                         MensajeError = $"Error interno: {ex.Message}",
                         FechaHora = DateTime.Now
+                    }
+                };
+            }
+        }
+
+
+
+
+        public async Task<ConsultaCuotasBTResponseDTO> ConsultarDetallesPrestamoAPP(ReqConsultaPrestamoDTO request)
+        {
+            try
+            {
+                if (request == null || request.BPInReq == null || request.BPInReq.Canal == null || request.BPInReq.Canal == 0)
+                {
+                    return new ConsultaCuotasBTResponseDTO
+                    {
+                        Btoutreq = new BtoutreqDTO
+                        {
+                            Estado = _configuration.GetSection("MensajesError")?["1012"] ?? "Canal requerido",
+                            Fecha = DateTime.Now.ToString("yyyy-MM-dd"),
+                            Hora = DateTime.Now.ToString("HH:mm:ss")
+                        }
+                    };
+                }
+
+
+
+                if (request.BPInReq.Canal != 3)
+                {
+                    return new ConsultaCuotasBTResponseDTO
+                    {
+                        Btoutreq = new BtoutreqDTO
+                        {
+                            Estado = _configuration.GetSection("MensajesError")?["1012"] ?? "Canal no valido.",
+                            Fecha = DateTime.Now.ToString("yyyy-MM-dd"),
+                            Hora = DateTime.Now.ToString("HH:mm:ss")
+                        }
+                    };
+                }
+
+
+                if (string.IsNullOrWhiteSpace(request.Credito))
+                {
+                    return new ConsultaCuotasBTResponseDTO
+                    {
+                        Btoutreq = new BtoutreqDTO
+                        {
+                            Estado = _configuration.GetSection("MensajesError")?["1019"] ?? "Número de crédito es requerido",
+                            Fecha = DateTime.Now.ToString("yyyy-MM-dd"),
+                            Hora = DateTime.Now.ToString("HH:mm:ss")
+                        }
+                    };
+                }
+
+                var resp = await _prestamosDA.ConsultarDetallesPrestamoDA(request);
+
+                if (resp == null)
+                {
+                    return new ConsultaCuotasBTResponseDTO
+                    {
+                        Btoutreq = new BtoutreqDTO
+                        {
+                            Estado = _configuration.GetSection("MensajesError")?["1017"] ?? "No se pudo realizar la Transacción.",
+                            Fecha = DateTime.Now.ToString("yyyy-MM-dd"),
+                            Hora = DateTime.Now.ToString("HH:mm:ss")
+                        }
+                    };
+                }
+
+                // Mapear BpOutReq interno en caso de éxito (consistencia con Giros)
+                if (resp.Btoutreq != null && resp.Btoutreq.Estado != null &&
+                    resp.Btoutreq.Estado.Equals("OK", StringComparison.OrdinalIgnoreCase))
+                {
+                    var bp = new BPOutReqDTO
+                    {
+                        CodigoError = "0",
+                        MensajeError = _configuration.GetSection("MensajesError")?["0"] ?? "Éxito",
+                        FechaHora = DateTime.Now
+                    };
+                    resp.BpOutReq = bp;
+                }
+
+                return resp;
+            }
+            catch (Exception ex)
+            {
+                return new ConsultaCuotasBTResponseDTO
+                {
+                    Btoutreq = new BtoutreqDTO
+                    {
+                        Estado = _configuration.GetSection("MensajesError")?["1017"] ?? $"Error interno: {ex.Message}",
+                        Fecha = DateTime.Now.ToString("yyyy-MM-dd"),
+                        Hora = DateTime.Now.ToString("HH:mm:ss")
                     }
                 };
             }
